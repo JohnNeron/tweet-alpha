@@ -85,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: prueba_rails_production
-  username: prueba_rails
-  password: <%= ENV["PRUEBA_RAILS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
