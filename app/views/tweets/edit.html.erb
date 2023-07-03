@@ -1,0 +1,14 @@
+<h1 class="text-center my-5">Editing tweet</h1>
+
+<div class="d-flex justify-content-center">
+    <div class="card col-6 ">
+      <div class="border p-5 shadow ">
+      <%= render "form", tweet: @tweet %>
+      <%= link_to "Show this tweet", @tweet, class:"btn btn-dark mt-5 mx-2" %>
+      <%= link_to "Back to tweets", tweets_path, class:"btn btn-dark mt-5 mx-2" %>
+      </div>
+    </div>
+</div>
+
+
+
